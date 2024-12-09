@@ -14,16 +14,29 @@ Predicting a company's risk of bankruptcy is a cornerstone of financial strategy
 
 ## Features
 - **Baseline Model: Logistic Regression**:
-  - A straightforward, explainable starting point, leveraging essential financial metrics to build a foundational bankruptcy prediction model.
+  - A straightforward, explainable starting point leveraging essential financial metrics.
+  - **Accuracy**: 94.91%
+  - **Precision (Minority Class)**: 50.00%
+  - **Recall (Minority Class)**: 0.007%
+  - **F1-Score (Minority Class)**: 0.017
 - **Advanced Model: Random Forest**:
-  - Achieves **89.54% accuracy** by uncovering nonlinear relationships in financial data, demonstrating the power of ensemble methods over linear techniques.
+  - Achieves **95.14% accuracy**, uncovering complex relationships in financial data.
+  - **Precision (Minority Class)**: 95.28%
+  - **Recall (Minority Class)**: 4.35%
+  - **F1-Score (Minority Class)**: 8.66%
 
 ---
 
 ## Future Roadmap
-- **Short-Term**: Optimize feature selection using techniques like Recursive Feature Elimination (RFE) to capture subtle financial interactions.
-- **Medium-Term**: Integrate advanced models like Gradient Boosting Machines (e.g., XGBoost) and Neural Networks for improved performance.
-- **Long-Term**: Incorporate real-time financial data streams for dynamic, live risk assessment.
+- **Short-Term**:
+  - **Enhance SMOTE Implementation**: Experiment with variations such as Borderline-SMOTE and SMOTE-Tomek links to improve minority class recall further.
+  - **Feature Engineering**: Include derived ratios like Altman Z-scores and other financial indices for better bankruptcy prediction.
+- **Medium-Term**:
+  - **Test Advanced Models**: Evaluate Gradient Boosting Machines (e.g., XGBoost, LightGBM) and Neural Networks to explore non-linear relationships.
+  - **Hyperparameter Tuning**: Use automated tools like Optuna or GridSearchCV for optimal model configurations.
+- **Long-Term**:
+  - **Real-Time Risk Monitoring**: Integrate real-time financial data streams for dynamic risk assessment.
+  - **Explainability Tools**: Leverage SHAP and LIME to interpret model decisions for stakeholders.
 
 ---
 
@@ -36,15 +49,26 @@ Predicting a company's risk of bankruptcy is a cornerstone of financial strategy
 
 ## Technology Stack
 - **Languages**: Python
-- **Libraries**: scikit-learn, pandas, NumPy, Matplotlib, Seaborn
-- **Techniques**: Data preprocessing, SMOTE for class balancing, ensemble methods
+- **Libraries**: scikit-learn, pandas, NumPy, Matplotlib, Seaborn, imbalanced-learn
+- **Techniques**: Data preprocessing, SMOTE for class balancing, Random Forest, Logistic Regression
 - **Workflow**: End-to-end pipeline covering preprocessing, model training, evaluation, and visualization.
 
 ---
 
 ## Key Results
-- Achieved **89.54% accuracy** with Random Forest, a significant improvement over baseline Logistic Regression (71%).
-- **F1-Score for the minority class** increased from 0.02 (Logistic Regression) to 0.09 (Random Forest), addressing class imbalance issues.
+### Logistic Regression:
+- **Accuracy**: 94.91%
+- **Precision (Minority Class)**: 50.00%
+- **Recall (Minority Class)**: 0.007%
+- **F1-Score (Minority Class)**: 0.017
+
+### Random Forest:
+- **Accuracy**: 95.14%
+- **Precision (Minority Class)**: 95.28%
+- **Recall (Minority Class)**: 4.35%
+- **F1-Score (Minority Class)**: 8.66%
+
+- **Top Features**: Key financial metrics include profitability ratios and liquidity measures.
 
 ---
 
@@ -57,33 +81,26 @@ Predicting a company's risk of bankruptcy is a cornerstone of financial strategy
 
 ## Visuals
 1. **Class Distribution Before and After SMOTE**:
-   ![Class Distribution](images/class_distribution.png)
-
+   - Visualizes the impact of balancing the dataset for training.
 2. **Feature Importance**:
-   ![Feature Importance](images/feature_importance.png)
-
-3. **Performance Metrics Comparison**:
-   | Metric           | Logistic Regression | Random Forest |
-   |------------------|---------------------|---------------|
-   | Accuracy         | 71%                 | 89.54%        |
-   | F1-Score (Class 1)| 0.02                | 0.09          |
+   - Displays the top 10 financial metrics driving the Random Forest model.
+3. **Confusion Matrices**:
+   - Highlights improved predictions for the minority class with Random Forest.
 
 ---
 
 ## How to Run the Code
 1. Clone this repository.
-2. Install the dependencies listed in `requirements.txt`.
+2. Install dependencies listed in `requirements.txt`.
 3. Run `bankruptcy_prediction.py` in your Python environment.
-4. View the generated visualizations and performance metrics in the output folder.
-
-Machine Learning for Credit Risk Assessment in Banking
-
-## Next Steps
-For detailed results and insights, explore:
-- The full model implementation in [bankruptcy_prediction.py](bankruptcy_prediction.py)
-- Visualizations stored in the `output` folder.
-- Dataset source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Polish+companies+bankruptcy+data).
+4. Review generated visualizations and performance metrics in the `output` folder.
 
 ---
+
+## Next Steps
+This project addresses the challenge of predicting rare events like bankruptcy, especially with imbalanced datasets. While the results show promise, future enhancements will focus on:
+- **Boosting Recall for the Minority Class**: Explore cost-sensitive learning and further tuning of SMOTE variations.
+- **Dynamic Data Integration**: Incorporate real-time financial data for continuous risk monitoring.
+- **Explainability**: Apply interpretability techniques like SHAP and LIME to build trust and provide actionable insights for stakeholders.
 
 Feel free to reach out or contribute to this project for further improvements!
