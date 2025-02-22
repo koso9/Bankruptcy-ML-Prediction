@@ -1,7 +1,7 @@
 # AI-Driven Credit Risk Assessment for Banking: Predicting Bankruptcy with Machine Learning
 
 ## Overview
-Predicting a company's risk of bankruptcy is a cornerstone of financial strategy. This project leverages machine learning to proactively assess credit and investment risks, offering data-driven solutions to safeguard financial portfolios. By analyzing the Polish Companies Bankruptcy Dataset (2000–2013), this project achieved **89.54% accuracy**, showcasing a scalable pipeline for modern credit risk evaluation.
+Bankruptcy prediction is a critical tool for financial institutions, investors, and risk managers. This project leverages machine learning models to assess corporate financial health, reducing risk exposure and enhancing portfolio decision-making. Using the **Polish Companies Bankruptcy Dataset (2000–2013)**, this model evaluates key financial indicators to classify firms as financially stable or at risk of bankruptcy. This project achieved **96.28% accuracy using Calibrated XGBoost**, demonstrating a scalable approach to modern credit risk evaluation and financial health assessment.
 
 ---
 
