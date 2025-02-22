@@ -67,6 +67,17 @@ By applying Isotonic Regression, the calibrated XGBoost model improves probabili
 - Variables: Profitability, liquidity, leverage, and efficiency ratios
 ________________________________________
 
+## **Real-World Applications**
+- **For Banks & Lenders – Develop AI-powered underwriting models for credit risk evaluation**
+- **For Investors & Hedge Funds – Identify at-risk firms and refine investment strategies**
+- **For Enterprises & CFOs – Benchmark corporate financial health**
+________________________________________
+Technology Stack
+🟢 Python – scikit-learn, XGBoost, NumPy, Pandas
+📊 Data Processing – Feature engineering, class balancing (SMOTE), and scaling
+🚀 Model Training – Random Forest, XGBoost, Logistic Regression
+📈 Evaluation Metrics – Confusion matrix, precision-recall, and F1-score
+
 
 ## Future Roadmap
 - **Short-Term**:
