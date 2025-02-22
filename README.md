@@ -6,25 +6,45 @@ Bankruptcy prediction is a critical tool for financial institutions, investors, 
 ---
 
 ## Why It Matters
-- **Enhance portfolio resilience**: Identify early warning signs of financial distress to prevent losses.
-- **Build smarter lending models**: Enable banks to make more informed credit decisions.
-- **Empower investment strategies**: Provide tools to assess corporate health for investors.
+- **Enhance portfolio resilience**: Early identification of financial distress helps mitigate losses.  
+- **Strengthen Lending & Investment Models**: Improved credit risk assessments enhance loan approvals and investment strategies.  
+- **Optimize Risk Management**: A data-driven approach to corporate health assessment helps businesses proactively navigate financial challenges.  
 
 ---
 
-## Features
+## Key Features
+**Machine Learning Models**:
+This project evaluates multiple models to balance accuracy, precision, and recall for bankruptcy prediction:
+
 - **Baseline Model: Logistic Regression**:
   - A straightforward, explainable starting point leveraging essential financial metrics.
   - **Accuracy**: 94.91%
   - **Precision (Minority Class)**: 50.00%
-  - **Recall (Minority Class)**: 0.007%
-  - **F1-Score (Minority Class)**: 0.017
+  - **Recall (Minority Class)**: 0.009%
+  - **F1-Score (Minority Class)**: 0.018
+    
 - **Advanced Model: Random Forest**:
   - Achieves **95.14% accuracy**, uncovering complex relationships in financial data.
-  - **Precision (Minority Class)**: 95.28%
-  - **Recall (Minority Class)**: 4.35%
+  - **Precision (Minority Class)**: 95.24%
+  - **Recall (Minority Class)**: 4.54%
   - **F1-Score (Minority Class)**: 8.66%
 
+- **Advanced Model: XGBoost Model**:
+  - Achieves **96.03% accuracy**, brief sentence.
+  - **Precision (Minority Class)**: 92.51%
+  - **Recall (Minority Class)**: 11.89%
+  - **F1-Score (Minority Class)**: 21.06%
+    
+- **Advanced Model: Calibrated XGBoost (Best Model)**:
+  - Achieves **95.89% accuracy**, brief sentence.
+  - **Precision (Minority Class)**: 83.72%
+  - **Recall (Minority Class)**: 16.42%
+  - **F1-Score (Minority Class)**: 27.66%
+    
+**Why Calibrated XGBoost?**  
+By applying **Platt Scaling**, the calibrated XGBoost model improves probability estimates, making it more effective for financial decision-making where precision and recall must be balanced.
+ 
+  
 ---
 
 ## Future Roadmap
