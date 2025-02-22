@@ -59,6 +59,14 @@ By applying Isotonic Regression, the calibrated XGBoost model improves probabili
 
 *(Feature importance is derived from XGBoost’s gain-based ranking.)*
 
+## **Data Source**
+
+- Dataset: Polish Companies Bankruptcy Dataset (UCI Repository) https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data
+  
+-	Scope: 2000–2013 financial data covering 5 years of company records
+- Variables: Profitability, liquidity, leverage, and efficiency ratios
+________________________________________
+
 
 ## Future Roadmap
 - **Short-Term**:
