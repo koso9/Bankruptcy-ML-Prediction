@@ -42,7 +42,7 @@ This project evaluates multiple models to balance accuracy, precision, and recal
   - **F1-Score (Minority Class)**: 41.95%
     
 **Why Calibrated XGBoost?**  
-By applying **Platt Scaling**, the calibrated XGBoost model improves probability estimates, making it more effective for financial decision-making where precision and recall must be balanced.
+By applying Isotonic Regression, the calibrated XGBoost model improves probability estimates, making it more effective for financial decision-making where precision and recall must be balanced.
  
 ---
 ## **Top 10 Features Influencing Bankruptcy Predictions**
