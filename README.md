@@ -46,8 +46,8 @@ By applying Isotonic Regression, the calibrated XGBoost model improves probabili
  
 ---
 ## **Top 10 Features Influencing Bankruptcy Predictions**
-1️⃣ **Net Profit / Total Assets**  
-2️⃣ **Total Liabilities / Total Assets**  
+1️⃣ **Net Profit / Total Assets = Return on Assets**  
+2️⃣ **Total Liabilities / Total Assets = Liabilities Ratio**  
 3️⃣ **Cash Ratio**  
 4️⃣ **Working Capital / Total Assets**  
 5️⃣ **EBIT / Total Assets**  
