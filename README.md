@@ -30,16 +30,16 @@ This project evaluates multiple models to balance accuracy, precision, and recal
   - **F1-Score (Minority Class)**: 8.66%
 
 - **Advanced Model: XGBoost Model**:
-  - Achieves **96.03% accuracy**, brief sentence.
-  - **Precision (Minority Class)**: 92.51%
-  - **Recall (Minority Class)**: 11.89%
-  - **F1-Score (Minority Class)**: 21.06%
+  - Achieves **95.84% accuracy**, brief sentence.
+  - **Precision (Minority Class)**: 90.00%
+  - **Recall (Minority Class)**: 20.41%
+  - **F1-Score (Minority Class)**: 33.27%
     
 - **Advanced Model: Calibrated XGBoost (Best Model)**:
-  - Achieves **95.89% accuracy**, brief sentence.
-  - **Precision (Minority Class)**: 83.72%
-  - **Recall (Minority Class)**: 16.42%
-  - **F1-Score (Minority Class)**: 27.66%
+  - Achieves **96.01% accuracy**, brief sentence.
+  - **Precision (Minority Class)**: 80.65%
+  - **Recall (Minority Class)**: 28.34%
+  - **F1-Score (Minority Class)**: 41.95%
     
 **Why Calibrated XGBoost?**  
 By applying **Platt Scaling**, the calibrated XGBoost model improves probability estimates, making it more effective for financial decision-making where precision and recall must be balanced.
