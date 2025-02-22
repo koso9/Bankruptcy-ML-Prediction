@@ -44,8 +44,21 @@ This project evaluates multiple models to balance accuracy, precision, and recal
 **Why Calibrated XGBoost?**  
 By applying **Platt Scaling**, the calibrated XGBoost model improves probability estimates, making it more effective for financial decision-making where precision and recall must be balanced.
  
-  
 ---
+## **Top 10 Features Influencing Bankruptcy Predictions**
+1️⃣ **Net Profit / Total Assets**  
+2️⃣ **Total Liabilities / Total Assets**  
+3️⃣ **Cash Ratio**  
+4️⃣ **Working Capital / Total Assets**  
+5️⃣ **EBIT / Total Assets**  
+6️⃣ **Debt Repayment Ratio**  
+7️⃣ **Sales / Total Assets**  
+8️⃣ **Equity / Total Assets**  
+9️⃣ **Gross Profit / Short-Term Liabilities**  
+🔟 **Retained Earnings / Total Assets**  
+
+*(Feature importance is derived from XGBoost’s gain-based ranking.)*
+
 
 ## Future Roadmap
 - **Short-Term**:
