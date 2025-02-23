@@ -71,22 +71,54 @@ ________________________________________
 - **For Banks & Lenders – Develop AI-powered underwriting models for credit risk evaluation**
 - **For Investors & Hedge Funds – Identify at-risk firms and refine investment strategies**
 - **For Enterprises & CFOs – Benchmark corporate financial health**
+  
 ________________________________________
 ## **Technology Stack**
 - **Python – scikit-learn, XGBoost, NumPy, Pandas**
 - **Data Processing – Feature engineering, class balancing (SMOTE), and scaling**
 - **Model Training – Random Forest, XGBoost, Logistic Regression**
 - **Evaluation Metrics – Confusion matrix, precision-recall, and F1-score**
+  
+________________________________________
 
----
 ## Next Steps & Future Roadmap
 While this model demonstrates strong predictive performance, particularly with Calibrated XGBoost, there are opportunities to refine its accuracy and applicability further. Enhancing recall for the minority class, incorporating real-time financial data, and improving model interpretability will be key areas of focus moving forward.
 
-- **Boosting Recall for the Minority Class**: Explore cost-sensitive learning and further tuning of SMOTE variations.
-- **Dynamic Data Integration**: Incorporate real-time financial data for continuous risk monitoring.
-- **Explainability**: Apply interpretability techniques like SHAP and LIME to build trust and provide actionable insights for stakeholders.
----
+## **Further Optimization of Calibrated XGBoost**:
+- **Fine-tune hyperparameters for better predictive performance**
+- **Explore additional financial ratios to enhance accuracy**
+- **Test alternative probability calibration methods**
+  
+## **Feature Engineering & Refinement**:
+- **Identify key financial metrics with the highest predictive power**
+- **Remove low-impact features to improve efficiency**
+- **Enhance SMOTE Implementation – Experiment with SMOTE-Tomek and Borderline-SMOTE to improve recall**
+- **Investigate non-linear transformations and interaction effects**
 
+## **Business Application & Deployment**:
+- **Evaluate use cases in lending, credit risk, and investment analysis**
+- **Deploy the model for real-time bankruptcy predictions**
+- **Develop a monitoring framework to track and recalibrate performance**
+
+## **Model Interpretabilityt**:
+- **Implement SHAP & LIME to explain key drivers of bankruptcy risk**
+- **Provide visualization tools for stakeholders**
+- 
+## **Alternative Modeling Techniques**:
+- **Test Ensemble Stacking with Random Forest, XGBoost, and Logistic Regression**
+- **Use Bayesian Optimization for hyperparameter tuning**
+- **Explore LSTM models for time-series bankruptcy prediction**
+
+## **Expanding Dataset Scope**:
+- **Incorporate macroeconomic indicators (e.g., interest rates, GDP) for added predictive power**
+- **Validate performance on global financial statements**
+
+## **Deployment & Integration**:
+- **Develop an API or dashboard for real-time bankruptcy assessments**
+- **Automate model retraining with new financial data**
+- **Ensure compliance with Basel III credit risk standards**
+
+---
 
 ## How to Run the Code
 1. Clone this repository.
