@@ -44,7 +44,6 @@ This project evaluates multiple models to balance accuracy, precision, and recal
 **Why Calibrated XGBoost?**  
 By applying Isotonic Regression, the calibrated XGBoost model improves probability estimates, making it more effective for financial decision-making where precision and recall must be balanced.
  
----
 ## **Top 10 Features Influencing Bankruptcy Predictions**
 1️⃣ **Return on Assets = Net Profit / Total Assets**  
 2️⃣ **Liabilities Ratio = Total Liabilities / Total Assets**  
@@ -59,18 +58,35 @@ By applying Isotonic Regression, the calibrated XGBoost model improves probabili
 
 *(Feature importance is derived from XGBoost’s gain-based ranking.)*
 
+________________________________________
 ## **Data Source**
 
-- Dataset: Polish Companies Bankruptcy Dataset (UCI Repository) https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data
+- **Dataset: Polish Companies Bankruptcy Dataset (UCI Repository) https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data**
   
--	Scope: 2000–2013 financial data covering 5 years of company records
-- Variables: Profitability, liquidity, leverage, and efficiency ratios
+-	**Scope: 2000–2013 financial data covering 5 years of company records**
+- **Variables: Profitability, liquidity, leverage, and efficiency ratios**
 ________________________________________
 
-## **Real-World Applications**
-- **For Banks & Lenders – Develop AI-powered underwriting models for credit risk evaluation**
-- **For Investors & Hedge Funds – Identify at-risk firms and refine investment strategies**
-- **For Enterprises & CFOs – Benchmark corporate financial health**
+## **Business Use Case & Deployment**
+This model has broad applications across banking, investment, and corporate finance, offering predictive insights to mitigate financial risk.
+### **Lending & Credit Risk Management**
+- **Banks and lenders can integrate the model into loan underwriting systems to flag high-risk borrowers before extending credit**
+- **The model can support automated risk-based pricing, adjusting loan terms or requiring additional collateral based on bankruptcy probability**
+- **Regulatory compliance teams can use probability scores for stress testing and risk mitigation**
+ 
+### **Investment & Portfolio Risk Analysis**
+- **Hedge funds and asset managers can identify financially unstable companies before making investment decisions**
+- **Bankruptcy probability can inform short-selling strategies or risk-adjusted portfolio allocation**
+- **Private equity firms can use predictions to assess acquisition targets and distressed assets**
+
+### **Corporate Finance & Risk Monitoring**
+- **CFOs and financial planning teams can use the model to benchmark their company's financial health vs. industry peers**
+- **Companies can implement the model in early warning systems to predict financial distress and adjust capital structure**
+
+### **Model Deployment & Integration**
+- **The model can be deployed via API for real-time bankruptcy risk assessment**
+- **Financial institutions can integrate predictions into internal risk dashboards for enhanced decision-making**
+- **A real-time monitoring system can be built to automate early intervention strategies**
   
 ________________________________________
 ## **Technology Stack**
@@ -84,41 +100,41 @@ ________________________________________
 ## Next Steps & Future Roadmap
 While this model demonstrates strong predictive performance, particularly with Calibrated XGBoost, there are opportunities to refine its accuracy and applicability further. Enhancing recall for the minority class, incorporating real-time financial data, and improving model interpretability will be key areas of focus moving forward.
 
-## **Further Optimization of Calibrated XGBoost**:
+### **Further Optimization of Calibrated XGBoost**:
 - **Fine-tune hyperparameters for better predictive performance**
 - **Explore additional financial ratios to enhance accuracy**
 - **Test alternative probability calibration methods**
   
-## **Feature Engineering & Refinement**:
+### **Feature Engineering & Refinement**:
 - **Identify key financial metrics with the highest predictive power**
 - **Remove low-impact features to improve efficiency**
 - **Enhance SMOTE Implementation – Experiment with SMOTE-Tomek and Borderline-SMOTE to improve recall**
 - **Investigate non-linear transformations and interaction effects**
 
-## **Business Application & Deployment**:
+### **Business Application & Deployment**:
 - **Evaluate use cases in lending, credit risk, and investment analysis**
 - **Deploy the model for real-time bankruptcy predictions**
 - **Develop a monitoring framework to track and recalibrate performance**
 
-## **Model Interpretabilityt**:
+### **Model Interpretabilityt**:
 - **Implement SHAP & LIME to explain key drivers of bankruptcy risk**
 - **Provide visualization tools for stakeholders**
 - 
-## **Alternative Modeling Techniques**:
+### **Alternative Modeling Techniques**:
 - **Test Ensemble Stacking with Random Forest, XGBoost, and Logistic Regression**
 - **Use Bayesian Optimization for hyperparameter tuning**
 - **Explore LSTM models for time-series bankruptcy prediction**
 
-## **Expanding Dataset Scope**:
+### **Expanding Dataset Scope**:
 - **Incorporate macroeconomic indicators (e.g., interest rates, GDP) for added predictive power**
 - **Validate performance on global financial statements**
 
-## **Deployment & Integration**:
+### **Deployment & Integration**:
 - **Develop an API or dashboard for real-time bankruptcy assessments**
 - **Automate model retraining with new financial data**
 - **Ensure compliance with Basel III credit risk standards**
 
----
+________________________________________
 
 ## How to Run the Code
 1. Clone this repository.
@@ -126,5 +142,5 @@ While this model demonstrates strong predictive performance, particularly with C
 3. Run `bankruptcy_prediction.py` in your Python environment.
 4. Review generated visualizations and performance metrics in the `output` folder.
 
----
+________________________________________
 Feel free to reach out or contribute to this project for further improvements!
