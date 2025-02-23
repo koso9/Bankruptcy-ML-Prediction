@@ -116,10 +116,10 @@ While this model demonstrates strong predictive performance, particularly with C
 - **Deploy the model for real-time bankruptcy predictions**
 - **Develop a monitoring framework to track and recalibrate performance**
 
-### **Model Interpretabilityt**:
+### **Model Interpretability**:
 - **Implement SHAP & LIME to explain key drivers of bankruptcy risk**
 - **Provide visualization tools for stakeholders**
-- 
+  
 ### **Alternative Modeling Techniques**:
 - **Test Ensemble Stacking with Random Forest, XGBoost, and Logistic Regression**
 - **Use Bayesian Optimization for hyperparameter tuning**
