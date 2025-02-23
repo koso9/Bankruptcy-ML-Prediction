@@ -72,74 +72,21 @@ ________________________________________
 - **For Investors & Hedge Funds – Identify at-risk firms and refine investment strategies**
 - **For Enterprises & CFOs – Benchmark corporate financial health**
 ________________________________________
-Technology Stack
-🟢 Python – scikit-learn, XGBoost, NumPy, Pandas
-📊 Data Processing – Feature engineering, class balancing (SMOTE), and scaling
-🚀 Model Training – Random Forest, XGBoost, Logistic Regression
-📈 Evaluation Metrics – Confusion matrix, precision-recall, and F1-score
-
-
-## Future Roadmap
-- **Short-Term**:
-  - **Enhance SMOTE Implementation**: Experiment with variations such as Borderline-SMOTE and SMOTE-Tomek links to improve minority class recall further.
-  - **Feature Engineering**: Include derived ratios like Altman Z-scores and other financial indices for better bankruptcy prediction.
-- **Medium-Term**:
-  - **Test Advanced Models**: Evaluate Gradient Boosting Machines (e.g., XGBoost, LightGBM) and Neural Networks to explore non-linear relationships.
-  - **Hyperparameter Tuning**: Use automated tools like Optuna or GridSearchCV for optimal model configurations.
-- **Long-Term**:
-  - **Real-Time Risk Monitoring**: Integrate real-time financial data streams for dynamic risk assessment.
-  - **Explainability Tools**: Leverage SHAP and LIME to interpret model decisions for stakeholders.
+## **Technology Stack**
+- **Python – scikit-learn, XGBoost, NumPy, Pandas**
+- **Data Processing – Feature engineering, class balancing (SMOTE), and scaling**
+- **Model Training – Random Forest, XGBoost, Logistic Regression**
+- **Evaluation Metrics – Confusion matrix, precision-recall, and F1-score**
 
 ---
+## Next Steps & Future Roadmap
+While this model demonstrates strong predictive performance, particularly with Calibrated XGBoost, there are opportunities to refine its accuracy and applicability further. Enhancing recall for the minority class, incorporating real-time financial data, and improving model interpretability will be key areas of focus moving forward.
 
-## Data Source
-- **Dataset**: Polish Companies Bankruptcy Dataset (UCI Repository)
-- **Scope**: 2000–2013 financial data for 5 years, representing solvency and insolvency cases.
-- **Variables**: Includes profitability, liquidity, leverage, and efficiency ratios.
-
+- **Boosting Recall for the Minority Class**: Explore cost-sensitive learning and further tuning of SMOTE variations.
+- **Dynamic Data Integration**: Incorporate real-time financial data for continuous risk monitoring.
+- **Explainability**: Apply interpretability techniques like SHAP and LIME to build trust and provide actionable insights for stakeholders.
 ---
 
-## Technology Stack
-- **Languages**: Python
-- **Libraries**: scikit-learn, pandas, NumPy, Matplotlib, Seaborn, imbalanced-learn
-- **Techniques**: Data preprocessing, SMOTE for class balancing, Random Forest, Logistic Regression
-- **Workflow**: End-to-end pipeline covering preprocessing, model training, evaluation, and visualization.
-
----
-
-## Key Results
-### Logistic Regression:
-- **Accuracy**: 94.91%
-- **Precision (Minority Class)**: 50.00%
-- **Recall (Minority Class)**: 0.007%
-- **F1-Score (Minority Class)**: 0.017
-
-### Random Forest:
-- **Accuracy**: 95.14%
-- **Precision (Minority Class)**: 95.28%
-- **Recall (Minority Class)**: 4.35%
-- **F1-Score (Minority Class)**: 8.66%
-
-- **Top Features**: Key financial metrics include profitability ratios and liquidity measures.
-
----
-
-## Real-World Applications
-- **For Banks**: Develop automated underwriting systems that evaluate corporate creditworthiness.
-- **For Investors**: Use bankruptcy risk predictions to make informed portfolio allocation decisions.
-- **For Enterprises**: Benchmark internal financial health against industry trends.
-
----
-
-## Visuals
-1. **Class Distribution Before and After SMOTE**:
-   - Visualizes the impact of balancing the dataset for training.
-2. **Feature Importance**:
-   - Displays the top 10 financial metrics driving the Random Forest model.
-3. **Confusion Matrices**:
-   - Highlights improved predictions for the minority class with Random Forest.
-
----
 
 ## How to Run the Code
 1. Clone this repository.
@@ -148,11 +95,4 @@ Technology Stack
 4. Review generated visualizations and performance metrics in the `output` folder.
 
 ---
-
-## Next Steps
-This project addresses the challenge of predicting rare events like bankruptcy, especially with imbalanced datasets. While the results show promise, future enhancements will focus on:
-- **Boosting Recall for the Minority Class**: Explore cost-sensitive learning and further tuning of SMOTE variations.
-- **Dynamic Data Integration**: Incorporate real-time financial data for continuous risk monitoring.
-- **Explainability**: Apply interpretability techniques like SHAP and LIME to build trust and provide actionable insights for stakeholders.
-
 Feel free to reach out or contribute to this project for further improvements!
