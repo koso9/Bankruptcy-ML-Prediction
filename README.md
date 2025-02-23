@@ -43,7 +43,13 @@ This project evaluates multiple models to balance accuracy, precision, and recal
     
 **Why Calibrated XGBoost?**  
 By applying Isotonic Regression, the calibrated XGBoost model improves probability estimates, making it more effective for financial decision-making where precision and recall must be balanced.
- 
+________________________________________
+## **Feature Importance: What Drives Bankruptcy Risk?**
+This model identifies the most influential financial ratios in predicting bankruptcy using XGBoost’s gain-based ranking.
+What does "gain" mean?
+- **Gain measures how much a feature improves the model’s accuracy when used in decision-making.**
+- **A higher gain score means the feature is more critical in predicting bankruptcy risk.**
+
 ## **Top 10 Features Influencing Bankruptcy Predictions**
 1️⃣ **Return on Assets = Net Profit / Total Assets**  
 2️⃣ **Liabilities Ratio = Total Liabilities / Total Assets**  
@@ -55,8 +61,6 @@ By applying Isotonic Regression, the calibrated XGBoost model improves probabili
 8️⃣ **Equity Ratio = Equity / Total Assets**  
 9️⃣ **Short-Term Profitability Ratio = Gross Profit / Short-Term Liabilities**  
 🔟 **Retained Earnings Ratio = Retained Earnings / Total Assets**  
-
-*(Feature importance is derived from XGBoost’s gain-based ranking.)*
 
 ________________________________________
 ## **Data Source**
