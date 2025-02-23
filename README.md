@@ -74,7 +74,7 @@ ________________________________________
 ## **Business Use Case & Deployment**
 This model has broad applications across banking, investment, and corporate finance, offering predictive insights to mitigate financial risk.
 ### **Lending & Credit Risk Management**
-- **Banks and lenders can integrate the model into loan underwriting systems to flag high-risk borrowers before extending credit**
+- **Lenders can integrate this model into loan underwriting systems to assign bankruptcy risk scores to borrowers before extending credit.**
 - **The model can support automated risk-based pricing, adjusting loan terms or requiring additional collateral based on bankruptcy probability**
 - **Regulatory compliance teams can use probability scores for stress testing and risk mitigation**
  
@@ -140,11 +140,4 @@ While this model demonstrates strong predictive performance, particularly with C
 
 ________________________________________
 
-## How to Run the Code
-1. Clone this repository.
-2. Install dependencies listed in `requirements.txt`.
-3. Run `bankruptcy_prediction.py` in your Python environment.
-4. Review generated visualizations and performance metrics in the `output` folder.
-
-________________________________________
 Feel free to reach out or contribute to this project for further improvements!
