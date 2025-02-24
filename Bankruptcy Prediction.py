@@ -4,8 +4,8 @@ import pandas as pd
 from scipy.io import arff  # For handling .arff files
 
 # Define file paths
-zip_file_path = r"C:\Users\aesic\Downloads\polish+companies+bankruptcy+data (1).zip"
-extraction_path = r"C:\Users\aesic\Downloads\polish_data"
+zip_file_path = input("Enter the path to your bankruptcy dataset ZIP file: ")
+extraction_path = input("Enter the path where you want to extract the files: ")
 
 # Create the extraction directory (if it doesn't exist)
 os.makedirs(extraction_path, exist_ok=True)
