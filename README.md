@@ -65,7 +65,7 @@ What does "gain" mean?
 ________________________________________
 ## **Data Source**
 
-- **Dataset: Polish Companies Bankruptcy Dataset (UCI Repository) https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data**
+- **Dataset: Polish Companies Bankruptcy Dataset (UCI Repository) https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data. Please go to the UCI Repository link and download the zip file before running the code**
   
 -	**Scope: 2000–2013 financial data covering 5 years of company records**
 - **Variables: Profitability, liquidity, leverage, and efficiency ratios**
